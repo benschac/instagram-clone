@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   ig.user_self_media_recent((err, medias, pagination, remaining) => {
     if(err) console.error(err);
 
-    medias.forEach((el) => console.log(el.caption));
+
     res.render('pages/index', {grams: medias});
   })
 
