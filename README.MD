@@ -4,7 +4,7 @@ Tools: This project uses Express.js + Instagram API + OAuth2 + FlexBox + EJS + V
 
 Summary: Benstagram or Youstagram pulls your photos from Instagram using express and renders them on a custom layout for you to browse through.
 
-![gif of application](http://g.recordit.co/6G3BNz7JL2.gif)
+![gif of application](http://g.recordit.co/QnVjo3JgAD.gif)
 
 ### Getting Started
 - `npm install` in the root directory of the project.
