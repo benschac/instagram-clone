@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const config = require('./config');
+const url = require('url');
 
 
 var ig = require('instagram-node').instagram();
@@ -19,10 +20,10 @@ app.set('view engine', 'ejs');
 
 
 
-let redirect_uri = 'http://localhost';
-
+let redirect_uri;
 
 app.get('/', (req, res) => {
+  redirect_uri = req.baseUrl;
 
   ig.user_self_media_recent((err, medias, pagination, remaining) => {
     if(err) console.error(err);
