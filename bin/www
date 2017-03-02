@@ -5,7 +5,7 @@ const debug = require('debug')('instagram-clone:server');
 const http = require('http');
 
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env || '3000');
 
 app.set('port', port);
 
@@ -61,4 +61,5 @@ function onListening() {
   ? 'pipe ' + addr
   : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log('Listening on ' + bind);
 }
