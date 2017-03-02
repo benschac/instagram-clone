@@ -23,14 +23,15 @@ app.set('view engine', 'ejs');
 let redirect_uri;
 
 app.get('/', (req, res) => {
-  redirect_uri = req.baseUrl;
-
-  ig.user_self_media_recent((err, medias, pagination, remaining) => {
-    if(err) console.error(err);
-
-
-    res.render('pages/index', {grams: medias});
-  })
+  res.send('hello friend');
+  // redirect_uri = req.baseUrl;
+  //
+  // ig.user_self_media_recent((err, medias, pagination, remaining) => {
+  //   if(err) console.error(err);
+  //
+  //
+  //   res.render('pages/index', {grams: medias});
+  // })
 
 });
 // start the server on port 8080
