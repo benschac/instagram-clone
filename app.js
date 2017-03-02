@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const config = require('./config');
+// const config = require('./config');
 
 
 var ig = require('instagram-node').instagram();
@@ -9,9 +9,9 @@ var ig = require('instagram-node').instagram();
 // or `access_token` previously entered if they exist.
 
 console.log(process.env.ACCESS_TOKEN);
-ig.use({ access_token: config.ACCESS_TOKEN || process.env.ACCESS_TOKEN,
-         client_id: config.CLIENT_ID || process.env.CLIENT_ID,
-         client_secret: config.SECRET || process.env.SECRET });
+ig.use({ access_token: process.env.ACCESS_TOKEN,
+         client_id: process.env.CLIENT_ID,
+         client_secret: process.env.SECRET });
 
 
 
