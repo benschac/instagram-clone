@@ -1,26 +1,26 @@
 const express = require('express');
 const app = express();
 // const config = require('./config');
-const url = require('url');
+// const url = require('url');
 
 
-var ig = require('instagram-node').instagram();
+// var ig = require('instagram-node').instagram();
 
 // Every call to `ig.use()` overrides the `client_id/client_secret`
 // or `access_token` previously entered if they exist.
 
-ig.use({ access_token: proccess.ENV.ACCESS_TOKEN,
-         client_id: proccess.ENV.CLIENT_ID,
-         client_secret: proccess.ENV.SECRET });
+// ig.use({ access_token: proccess.ENV.ACCESS_TOKEN,
+//          client_id: proccess.ENV.CLIENT_ID,
+//          client_secret: proccess.ENV.SECRET });
 
 
 
-app.use(express.static(__dirname + '/public'));
-app.set('view engine', 'ejs');
+// app.use(express.static(__dirname + '/public'));
+// app.set('view engine', 'ejs');
 
 
 
-let redirect_uri;
+// let redirect_uri;
 
 app.get('/', (req, res) => {
   res.send('hello friend');
