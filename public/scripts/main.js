@@ -30,7 +30,7 @@ function setDetailsFromThumb(thumbnail) {
 };
 
 function addThumbClickHandler(thumb) {
-  thumb.addEventListener('click', function(event) {
+  thumb.addEventListener('click', (event) => {
     event.preventDefault();
     setDetailsFromThumb(thumb);
     showDetails();
@@ -59,7 +59,7 @@ function showDetails() {
 }
 
 function addKeyPressHandler() {
-  document.body.addEventListener('keyup', function(event) {
+  document.body.addEventListener('keyup', (event) => {
     event.preventDefault();
     if(event.keyCode === ESC_KEY) {
       hideDetails();

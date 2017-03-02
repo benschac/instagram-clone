@@ -8,9 +8,9 @@ var ig = require('instagram-node').instagram();
 // Every call to `ig.use()` overrides the `client_id/client_secret`
 // or `access_token` previously entered if they exist.
 
-ig.use({ access_token: config.ACCESS_TOKEN,
-         client_id: config.CLIENT_ID,
-         client_secret: config.SECRET });
+ig.use({ access_token: proccess.ENV.ACCESS_TOKEN,
+         client_id: proccess.ENV.CLIENT_ID,
+         client_secret: proccess.ENV.SECRET });
 
 
 
@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 
 
 
-var redirect_uri = 'http://localhost';
+let redirect_uri = 'http://localhost';
 
 
 app.get('/', (req, res) => {
