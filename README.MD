@@ -2,6 +2,8 @@
 
 Tools: Express.js + Instagram API + OAuth2 + FlexBox + EJS + Vanilla Javascript.
 
+Project [Demo](https://instaben.herokuapp.com/)
+
 Summary: Benstagram or Youstagram pulls your photos from Instagram using express and renders them on a custom layout for you to browse through.
 
 ![gif of application](http://g.recordit.co/QnVjo3JgAD.gif)
@@ -18,6 +20,6 @@ Summary: Benstagram or Youstagram pulls your photos from Instagram using express
  }
 ```
 
-If you need some help generating these keys, I wrote a blog post [TO-DO] here about my experience with some step by step instructions on how to generate everything you need.
+If you need some help generating these keys, I wrote a blog [post](https://medium.com/@benschac/youstagram-6f990ccfd8c4#.pr4tpstz1) here about my experience with some step by step instructions on how to generate everything you need.
 
 - `npm run start`
