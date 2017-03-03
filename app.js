@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     if(err) console.error(err);
 
 
-    res.render('pages/index', {gram: medias});
+    res.render('pages/index', {grams: medias});
   });
 
 });
