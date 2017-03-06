@@ -4,13 +4,24 @@
   "description": "",
   "scripts": {
     "start:dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "eslint src && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test",
+    "start": "babel-node src"
   },
   "keywords": [],
   "author": "Bejamin Schachter <benschac@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-jest": "^19.0.0",
+    "babel-preset-env": "^1.2.0",
+    "eslint": "^3.17.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "jest": "^19.0.2",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
